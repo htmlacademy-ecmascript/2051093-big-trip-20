@@ -1,16 +1,36 @@
-import BoardPresenter from './presenter/board-presenter';
-import {RenderPosition, render} from './render';
-import FilterView from './view/filter-view';
-import SortView from './view/sort-view';
-import TripInfoView from './view/trip-info-view';
+import './view/brief-view.js';
+import './view/add-view.js';
+import './view/filter-view.js';
+import './view/sort-view.js';
+import './view/list-view.js';
 
-const tripInfoContainer = document.querySelector('.trip-main');
-const filtersContainer = document.querySelector('.trip-controls__filters');
-const sortContainer = document.querySelector('.trip-events');
-const boardPresenter = new BoardPresenter({boardContainer: sortContainer});
+/**
+ * @type {BriefView}
+ */
+const briefView = document.querySelector('brief-view');
 
-render(new FilterView(), filtersContainer);
-render(new TripInfoView(), tripInfoContainer, RenderPosition.AFTERBEGIN);
-render(new SortView(), sortContainer);
+/**
+ * @type {AddView}
+ */
+const addView = document.querySelector('add-view');
 
-boardPresenter.init();
+/**
+ * @type {FilterView}
+ */
+const filterView = document.querySelector('filter-view');
+
+/**
+ * @type {SortView}
+ */
+const sortView = document.querySelector('sort-view');
+
+/**
+ * @type {ListView}
+ */
+const listView = document.querySelector('list-view');
+
+briefView.render();
+addView.render();
+filterView.render();
+sortView.render();
+listView.render();
