@@ -6,9 +6,14 @@ import Presenter from './presenter.js';
 class AddPresenter extends Presenter {
   /**
    * @override
+   * @return {AddViewState}
    */
   createViewState() {
-    // TODO: AddViewState
+    // TODO: создать динамически
+
+    return {
+      isDisabled: true
+    };
   }
 }
 
