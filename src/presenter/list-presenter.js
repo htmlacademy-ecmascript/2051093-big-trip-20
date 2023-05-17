@@ -1,5 +1,4 @@
 import {formatDate, formatDuration, formatTime} from '../utils.js';
-import CardView from '../view/card-view.js';
 import Presenter from './presenter.js';
 
 /**
@@ -87,8 +86,27 @@ class ListPresenter extends Presenter {
       this.setUrlParams(urlParams);
     };
 
+    /**
+     *
+     * @param {CustomEvent & {target: CardView}} event
+     */
+    const handleViewFavorite = (event) => {
+      this.togglePointIsFavorite(event.target);
+    };
+
     this.view.addEventListener('open', handleViewOpen);
-    this.view.addEventListener('close',handleViewClose);
+    this.view.addEventListener('close', handleViewClose);
+    this.view.addEventListener('favorite', handleViewFavorite);
+  }
+
+  /**
+   * @param {CardView} card
+   */
+  togglePointIsFavorite(card) {
+    const point = card.state;
+
+    point.isFavorite = !point.isFavorite;
+    card.render();
   }
 }
 
