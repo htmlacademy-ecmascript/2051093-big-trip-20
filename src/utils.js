@@ -52,8 +52,15 @@ function formatTime(dateTime) {
  */
 function formatDuration(startDateTime, endDateTime) {
   const ms = dayjs(endDateTime).diff(startDateTime);
+  const duration = dayjs.duration(ms);
 
-  return dayjs.duration(ms).format('HH[H] mm[M]');
+  if (duration.days()) {
+    return duration.format('DD[D] HH[H] mm[M]');
+  }
+  if (duration.hours()) {
+    return duration.format('HH[H] mm[M]');
+  }
+  return duration.format('mm[M]');
 }
 
 export {SafeHtml, html, formatDate, formatTime, formatDuration};

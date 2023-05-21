@@ -92,7 +92,7 @@ class CardView extends View {
           —
           <time class="event__end-time" datetime="${point.endDateTime}">${point.endTime}</time>
         </p>
-        <p class="event__duration">30M</p>
+        <p class="event__duration">${point.duration}</p>
       </div>
     `;
   }
