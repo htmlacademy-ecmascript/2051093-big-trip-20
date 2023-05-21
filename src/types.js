@@ -83,6 +83,7 @@
 /**
  * @typedev UrlParams
  * @prop {string} [edit]
+ * @prop {SortType} [sort]
  */
 
 /**
