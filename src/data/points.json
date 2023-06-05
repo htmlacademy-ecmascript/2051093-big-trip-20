@@ -2,8 +2,8 @@
   {
     "id": "fd2104e9-ea5b-4fad-be29-d83d947d059e",
     "base_price": 294,
-    "date_from": "2024-02-05T21:28:01.397Z",
-    "date_to": "2024-02-06T03:28:01.397Z",
+    "date_from": "2023-05-24T21:28:01.397Z",
+    "date_to": "2023-05-26T03:28:01.397Z",
     "destination": "a50df41e-801a-4c54-b1f2-d2687755930c",
     "is_favorite": true,
     "offers": [
@@ -16,8 +16,8 @@
   {
     "id": "b328f54a-f551-4462-806d-6e2c61ecb60d",
     "base_price": 9549,
-    "date_from": "2024-02-06T03:28:01.397Z",
-    "date_to": "2024-02-07T13:28:01.397Z",
+    "date_from": "2023-02-06T03:28:01.397Z",
+    "date_to": "2023-02-07T13:28:01.397Z",
     "destination": "cec0af07-313f-4310-8093-d0f16f075cdd",
     "is_favorite": true,
     "offers": [
@@ -32,8 +32,8 @@
   {
     "id": "aa51e432-6cf7-4c67-a0a0-52398becc332",
     "base_price": 7571,
-    "date_from": "2024-02-07T13:28:01.397Z",
-    "date_to": "2024-02-09T09:28:01.397Z",
+    "date_from": "2023-02-07T13:28:01.397Z",
+    "date_to": "2023-02-09T09:28:01.397Z",
     "destination": "cec0af07-313f-4310-8093-d0f16f075cdd",
     "is_favorite": false,
     "offers": [
